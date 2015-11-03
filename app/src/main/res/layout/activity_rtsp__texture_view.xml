@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.foxlinkimage.alex.rtsp_sample.RTSP_TextureView">
+
+    <!--android:text="rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov"-->
+    <!--http://samples.mplayerhq.hu/V-codecs/h264/interlaced_crop.mp4-->
+    <EditText
+        android:id="@+id/editText"
+        android:text="rtsp://171.16.99.130:8554/h"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btnCapture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Capture" />
+
+    <Button
+        android:id="@+id/btnResize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resize" />
+
+    <TextureView
+        android:id="@+id/rtspVideo2"
+        android:layout_width="346dp"
+        android:layout_height="329dp" />
+
+
+
+</LinearLayout>
